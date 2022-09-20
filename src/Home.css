@@ -1,0 +1,37 @@
+.Home {
+  margin: 3rem auto;
+}
+
+.Home h1 {
+    font-size: 3rem;
+}
+
+.Home_addColor_btn  {
+    display: flex;
+    justify-content: center;
+    width: 20rem;
+    margin: 0 auto;
+    color: #fff;
+    text-decoration:none;
+    background-color: blue;
+font-size: 1.5rem;
+    border: 2px solid black;
+    border-radius:10px;
+}
+
+.Home_color_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    flex-direction: column;
+}
+
+.Home_color_box a {
+    font-size: 1.5rem;
+}
+
+.Home_individual_color a {
+    font-size: 1.5rem;
+
+}
