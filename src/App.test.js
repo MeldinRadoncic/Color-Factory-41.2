@@ -1,8 +1,14 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import {MemoryRouter} from 'react-router-dom'
+import Home from './pages/Home'
 
-test('renders learn react link', () => {
-  render(<App />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
-});
+
+test('Renders Home', () => {
+  render((
+      <MemoryRouter initialEntries={['/colors']}>
+          <Home/>
+      </MemoryRouter>
+  ))
+  expect(screen.getByText('Welcome to the color factory')).toBeInTheDocument()
+})
